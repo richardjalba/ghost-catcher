@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ghost Catcher</title>
+  </head>
+  <body>
+    <!-- Intro Screen -->
+    <div class="screen">
+      <h1>Catch the Ghost</h1>
+      <button class="btn" id="start-btn">START GAME</button>
+    </div>
+
+    <!-- Ghost Selection Screen -->
+    <div class="screen">
+      <h1>Which ghost looks the most sus?</h1>
+      <ul class="ghosts-list">
+        <li>
+          <button class="choose-ghost-btn">
+            <p>Rollo</p>
+            <img
+              src="https://freepngimg.com/thumb/pacman/21563-3-pac-man-ghost-transparent-image.png"
+              alt=""
+            />
+          </button>
+          <button class="choose-ghost-btn">
+            <p>Sunny</p>
+            <img
+              src="https://i.pinimg.com/originals/27/8b/96/278b96137fc925871c4068c9be9b56af.png"
+              alt=""
+            />
+          </button>
+          <button class="choose-ghost-btn">
+            <p>Jon</p>
+            <img
+              src="https://lh3.googleusercontent.com/proxy/QdBsqWVpXLuPq0jNbEAvchceHw_Dd2UxBIGqTZ4kQGyNEPR3RymZ4hY2TBgHk4aJtlwqk181heuUiMXcUR1KQeEzXVG5oaADZ1TIVuAyu0OcNeSOFFFrdpigZoUmUgX5"
+              alt=""
+            />
+          </button>
+          <button class="choose-ghost-btn">
+            <p>Lefty</p>
+            <img
+              src="https://i.pinimg.com/originals/79/4e/ae/794eae170aa47f1f3aa843f135ee06ab.png"
+              alt=""
+            />
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Play Screen -->
+    <div class="screen game-container" id="game-container">
+      <h2 id="time" class="time">Time: 00:00</h2>
+      <h2 id="score" class="score">Score: 0</h2>
+      <h4 id="message" class="message">
+        There's too many of them!!! <br />
+        Player, you need to get out of here! <br />
+        It's impossible... you can't win...
+      </h4>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
